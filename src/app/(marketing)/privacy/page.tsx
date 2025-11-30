@@ -15,8 +15,9 @@ export default function PrivacyPage() {
         </p>
         <p>
           Ta Polityka Prywatności wyjaśnia, jak <strong>spoko.help</strong>{" "}
-          („my", „nasze" lub „nas") przetwarza Twoje dane podczas korzystania z
-          naszej strony i narzędzia do stymulacji obustronnej (BLS).
+          (&ldquo;my&rdquo;, &ldquo;nasze&rdquo; lub &ldquo;nas&rdquo;)
+          przetwarza Twoje dane podczas korzystania z naszej strony i narzędzia
+          do stymulacji obustronnej (BLS).
         </p>
         <h2 className="text-xl font-semibold mt-6 mb-2">
           1. Jakie informacje zbieramy

@@ -3,7 +3,6 @@ import "./globals.css";
 import { cookies } from "next/headers";
 import { THEME_COOKIE } from "@/lib/theme";
 import ThemeProvider from "@/components/ThemeProvider";
-import Header from "@/components/Header";
 
 export const metadata: Metadata = {
   title: "Spoko | EMDR Online | Stymulacja obustronna",

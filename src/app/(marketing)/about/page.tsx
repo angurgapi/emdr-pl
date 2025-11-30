@@ -58,7 +58,7 @@ export default function AboutPage() {
           rejonach mózgu związanych ze stresem i sprzyja poczuciu równowagi oraz
           zakorzenienia. Krótko mówiąc: gdy uwaga rytmicznie przesuwa się z
           jednej strony na drugą, układ nerwowy łatwiej przechodzi z trybu
-          „walki lub ucieczki" w stan spokoju.
+          &ldquo;walki lub ucieczki&rdquo; w stan spokoju.
         </p>
 
         <h2 className="text-2xl font-semibold mt-8 mb-2">Nasza misja</h2>

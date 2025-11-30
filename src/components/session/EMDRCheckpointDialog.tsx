@@ -45,32 +45,34 @@ export function EMDRCheckpointDialog() {
           <div className="space-y-2">
             <h4 className="font-medium">✓ Zadbaj o wygodę</h4>
             <p className="text-sm text-muted-foreground">
-              Znajdź ciche, wygodne miejsce, gdzie nikt Cię nie będzie przeszkadzał. 
-              Usiądź lub połóż się w zrelaksowanej pozycji.
+              Znajdź ciche, wygodne miejsce, gdzie nikt Cię nie będzie
+              przeszkadzał. Usiądź lub połóż się w zrelaksowanej pozycji.
             </p>
           </div>
           <div className="space-y-2">
             <h4 className="font-medium">✓ Bezpieczeństwo przede wszystkim</h4>
             <p className="text-sm text-muted-foreground">
-              To narzędzie nie zastępuje profesjonalnej terapii. Jeśli zmagasz się 
-              z traumą, silnym lękiem lub innymi problemami ze zdrowiem psychicznym, 
-              skonsultuj się z licencjonowanym terapeutą przeszkolonym w EMDR lub 
-              innych terapiach opartych na dowodach naukowych.
+              To narzędzie nie zastępuje profesjonalnej terapii. Jeśli zmagasz
+              się z traumą, silnym lękiem lub innymi problemami ze zdrowiem
+              psychicznym, skonsultuj się z licencjonowanym terapeutą
+              przeszkolonym w EMDR lub innych terapiach opartych na dowodach
+              naukowych.
             </p>
           </div>
           <div className="space-y-2">
             <h4 className="font-medium">✓ Słuchaj swojego ciała</h4>
             <p className="text-sm text-muted-foreground">
-              Jeśli podczas sesji odczujesz dyskomfort, stres lub przytłaczające 
-              emocje, natychmiast przerwij i rozważ kontakt ze specjalistą 
-              ds. zdrowia psychicznego.
+              Jeśli podczas sesji odczujesz dyskomfort, stres lub przytłaczające
+              emocje, natychmiast przerwij i rozważ kontakt ze specjalistą ds.
+              zdrowia psychicznego.
             </p>
           </div>
           <div className="space-y-2">
             <h4 className="font-medium">✓ Nie spiesz się</h4>
             <p className="text-sm text-muted-foreground">
-              Nie ma pośpiechu. Użyj ustawień długości sesji, aby znaleźć to, co 
-              dla Ciebie najlepsze. Możesz wstrzymać lub zatrzymać w każdej chwili.
+              Nie ma pośpiechu. Użyj ustawień długości sesji, aby znaleźć to, co
+              dla Ciebie najlepsze. Możesz wstrzymać lub zatrzymać w każdej
+              chwili.
             </p>
           </div>
         </div>

@@ -45,8 +45,8 @@ export function SessionEndDialog() {
         <DialogHeader>
           <DialogTitle>Dobra robota</DialogTitle>
           <DialogDescription>
-            Twoja sesja dobiegła końca. Czy chcesz rozpocząć kolejną sesję 
-            z tymi samymi ustawieniami?
+            Twoja sesja dobiegła końca. Czy chcesz rozpocząć kolejną sesję z
+            tymi samymi ustawieniami?
           </DialogDescription>
         </DialogHeader>
         <DialogFooter className="flex-col sm:flex-row gap-2">

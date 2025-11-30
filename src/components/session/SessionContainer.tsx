@@ -161,7 +161,7 @@ const SessionBox = () => {
             data-ignore-pause
             variant="soft"
           >
-            {isFullscreen ? "Exit Fullscreen" : "Fullscreen"}
+            {isFullscreen ? "Wyjdź z pełnego ekranu" : "Pełny ekran"}
           </Button>
         </div>
       </div>

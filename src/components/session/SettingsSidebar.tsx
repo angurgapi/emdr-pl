@@ -14,16 +14,13 @@ import {
 } from "@/store/sessionSettings";
 import { Input } from "../ui/input";
 import { Button } from "../ui/button";
-import { useEffect } from "react";
 import {
   MoveDiagonal,
   MoveDiagonal2,
   MoveHorizontal,
   MoveVertical,
-  Infinity,
 } from "lucide-react";
 import { Switch } from "@/components/ui/switch";
-import { audio } from "framer-motion/client";
 
 export function SettingsSidebar() {
   const {
@@ -71,11 +68,19 @@ export function SettingsSidebar() {
       label: "5 min",
     },
     { value: "20m", label: "20 min" },
-    { value: "1h", label: "1 h" },
+    { value: "1h", label: "1 g" },
   ];
   // useEffect(() => {
   //   setBallSize(sizemap["m"]);
   // }, [setBallSize]);
+  const soundOptions = [
+    {
+      label: "Pstryk",
+      value: "snap",
+    },
+    { label: "Bicie serca", value: "heartbeat" },
+    { label: "Pik", value: "beep" },
+  ];
   return (
     <Sidebar className="z-50 min-h-[200px]">
       <SidebarContent className="pt-1">
@@ -152,26 +157,35 @@ export function SettingsSidebar() {
                   </Button>
                 ))}
               </div>
-              <div className="flex flex-col gap-2 mt-4">
-                <span className="font-semibold">Dźwięk wł./wył.</span>
-                <Switch checked={isSoundOn} onCheckedChange={setSoundOn} />
-              </div>
-              {isSoundOn && (
-                <div className="flex flex-col gap-2 mt-4">
-                  <span className="font-semibold">Rodzaj dźwięku</span>
-                  <div className="flex gap-2 items-center">
-                    {["snap", "heartbeat", "beep"].map((sound) => (
-                      <Button
-                        size="sm"
-                        variant={sound === audioSound ? "default" : "outline"}
-                        key={sound}
-                        onClick={() => setAudioSound(sound as AudioSound)}
-                      >
-                        {sound}
-                      </Button>
-                    ))}
+
+              {ballDirection === "leftToRight" && (
+                <>
+                  <div className="flex flex-col gap-2 mt-4">
+                    <span className="font-semibold">Dźwięk</span>
+                    <Switch checked={isSoundOn} onCheckedChange={setSoundOn} />
                   </div>
-                </div>
+                  {isSoundOn && (
+                    <div className="flex flex-col gap-2 mt-4">
+                      <span className="font-semibold">Rodzaj dźwięku</span>
+                      <div className="flex gap-2 items-center">
+                        {soundOptions.map((sound) => (
+                          <Button
+                            size="sm"
+                            variant={
+                              sound.value === audioSound ? "default" : "outline"
+                            }
+                            key={sound.value}
+                            onClick={() =>
+                              setAudioSound(sound.value as AudioSound)
+                            }
+                          >
+                            {sound.label}
+                          </Button>
+                        ))}
+                      </div>
+                    </div>
+                  )}
+                </>
               )}
               <div className="flex flex-col gap-2 mt-4">
                 <span className="font-semibold">Długość sesji</span>
